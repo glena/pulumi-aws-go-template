@@ -11,7 +11,7 @@ template:
   deploy:
     sourceContext:
       type: github
-      repository: ${REPOSITORY}
+      repository: ${BRANCH}
       branch: ${MAIN}
       folder: .
     operation:
