@@ -6,16 +6,3 @@ template:
     aws:region:
       description: The AWS region to deploy into
       default: us-east-1
-  deploy:
-    gitHub:
-      deployCommits: true
-      previewPullRequests: true
-      repository: ${REPOSITORY}
-    operationContext:
-      options:
-        skipIntermediateDeployments: true
-        skipInstallDependencies: false
-    sourceContext:
-      git:
-        branch: ${BRANCH}
-        repoDir: .
